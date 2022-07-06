@@ -15,7 +15,7 @@ export class CreateUserController {
             await this.createUserUseCase.execute({
                 name, 
                 email,
-                 password
+                password
             })
             return response.status(201).json()
         } catch (err: any) {
